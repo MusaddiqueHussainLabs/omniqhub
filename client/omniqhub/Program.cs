@@ -1,6 +1,4 @@
-using MudBlazor.Services;
-using omniqhub.client.Pages;
-using omniqhub.Components;
+using omniqhub.client.Components;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,7 +7,7 @@ builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents()
     .AddInteractiveWebAssemblyComponents();
 
-builder.Services.AddMudServices();
+//builder.Services.AddMudServices();
 
 var app = builder.Build();
 
@@ -32,7 +30,7 @@ app.UseAntiforgery();
 
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode()
-    .AddInteractiveWebAssemblyRenderMode()
-    .AddAdditionalAssemblies(typeof(omniqhub.client._Imports).Assembly);
+    .AddInteractiveWebAssemblyRenderMode();
+    //.AddAdditionalAssemblies(typeof(omniqhub.client._Imports).Assembly);
 
 app.Run();
