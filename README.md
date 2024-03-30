@@ -40,7 +40,7 @@ OmniqHub adopts a modular architecture leveraging both frontend and backend comp
    - [**Azure Cognitive Search**](https://learn.microsoft.com/azure/search/search-what-is-azure-search) – indexes documents from the data stored in an Azure Storage Account. This makes the documents searchable using [vector search](https://learn.microsoft.com/azure/search/search-get-started-vector) capabilities. 
    - [**Google Gemini Pro Service**](https://ai.google.dev/docs) – provides the Large Language Models to generate responses. [LangChain](https://python.langchain.com/docs/get_started/introduction) is used in conjunction with the Google Gemini Pro Service to orchestrate the more complex AI workflows.
 
-![RAG Architecture](references/RAG Architecture.png)
+![RAG Architecture](references/RAG_Architecture.png)
 
 ## Azure Account Requirements
 
