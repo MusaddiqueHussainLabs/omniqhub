@@ -107,4 +107,4 @@ A: The roadmap for OmniqHub's future developments may vary. Stay tuned to the re
 **Note**: I focused on main functionality rather than form validation or other small functionality, please customize the functionality as per your requirement.
 
 **Q: What support channels are available for troubleshooting and assistance?**
-A: For troubleshooting and assistance, you can refer to the documentation provided within the repository or reach out to the community via GitHub discussions or issue tracker.
+A: For troubleshooting and assistance, you can refer to the documentation provided within the repository or reach out to me on musaddiquehussainlabs@gmail.com or issue tracker.
