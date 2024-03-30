@@ -42,6 +42,10 @@ OmniqHub adopts a modular architecture leveraging both frontend and backend comp
 
 ![RAG Architecture](references/RAG_Architecture.png)
 
+## Demo
+
+<video src="references/OmniQ_Hub_Demo.mp4" width="900" height="300" controls></video>
+
 ## Azure Account Requirements
 
 To fully utilize the capabilities of OmniqHub and deploy it seamlessly, you'll need:
@@ -74,6 +78,8 @@ follow these steps to run Azure function [Azure Function](https://learn.microsof
 #### Azurite
 Start the Azurite emulator [Azurite](https://learn.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-python#start-the-emulator)
 
+#### Azure Blob Storage Explorer
+[Storage Explorer](https://learn.microsoft.com/en-IN/azure/storage/storage-explorer/vs-azure-tools-storage-explorer-blobs#overview)
 
 ## Resources
 
