@@ -44,7 +44,7 @@ OmniqHub adopts a modular architecture leveraging both frontend and backend comp
 
 ## Demo
 
-<video src="references/OmniQ_Hub_Demo.mp4" width="900" height="300" controls></video>
+[Demo](references/OmniQ_Hub_Demo.mp4)
 
 ## Azure Account Requirements
 
@@ -103,6 +103,8 @@ A: Contributions are welcome! Fork the repository, make your changes, and submit
 
 **Q: Is there a roadmap for future developments of OmniqHub?**
 A: The roadmap for OmniqHub's future developments may vary. Stay tuned to the repository for updates and announcements regarding new features and enhancements.
+
+**Note**: I focused on main functionality rather than form validation or other small functionality, please customize the functionality as per your requirement.
 
 **Q: What support channels are available for troubleshooting and assistance?**
 A: For troubleshooting and assistance, you can refer to the documentation provided within the repository or reach out to the community via GitHub discussions or issue tracker.
