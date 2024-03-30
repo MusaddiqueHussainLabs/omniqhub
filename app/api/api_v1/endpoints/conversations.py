@@ -91,7 +91,7 @@ def chat(request: RequestModel):
             SupportingImageRecord(title="Benefit_Options.pdf: Dummy Image 1", url="http://example.com/image1.jpg"),
             SupportingImageRecord(title="Benefit_Options.pdf: Dummy Image 2", url="http://example.com/image2.jpg"),
         ],
-        citation_base_url="http://127.0.0.1:10000/devstoreaccount1/omnihub-container/Benefit_Options.pdf?st=2024-03-23T20%3A13%3A14Z&se=2024-03-23T20%3A43%3A14Z&sp=r&sv=2023-11-03&sr=b&sig=UGES2vmpwllJRpS2Q1JTZj4SxU4BTEd3%2Bzzf7864ejw%3D"
+        citation_base_url="http://127.0.0.1:10000/"
     )
 
     return ResponseModel(
@@ -154,7 +154,7 @@ def chat(request: RequestModel):
             data_points=[
                 SupportingContentRecord(title="", content="")
             ],
-            citation_base_url="http://127.0.0.1:10000/devstoreaccount1/omnihub-container"
+            citation_base_url="http://127.0.0.1:10000/"
         )
 
     return ResponseModel(

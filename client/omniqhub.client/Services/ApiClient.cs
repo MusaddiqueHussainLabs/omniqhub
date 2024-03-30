@@ -70,9 +70,11 @@ namespace omniqhub.client.Services
                 {
                     var result = await response.Content.ReadFromJsonAsync<UploadDocumentsResponse>();
 
+#pragma warning disable CS8603 // Possible null reference return.
                     return result;
+#pragma warning restore CS8603 // Possible null reference return.
                 }
-
+                
                 UploadDocumentsResponse uploadDocumentsResponse = new UploadDocumentsResponse();
                 uploadDocumentsResponse.error = "Unable to upload files, unknown error.";
                 return uploadDocumentsResponse;
@@ -86,14 +88,16 @@ namespace omniqhub.client.Services
             }
         }
 
-        public async Task<DocumentResponse[]> GetDocumentsAsync()
+        public async Task<DocumentResponse[]?> GetDocumentsAsync()
         {
             var response = await httpClient.GetAsync("api/v1/documents");
 
             if (response.IsSuccessStatusCode)
             {
                 string jsonResponse = await response.Content.ReadAsStringAsync();
+#pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
                 DocumentResponse[] documentResponses = JsonSerializer.Deserialize<DocumentResponse[]>(jsonResponse);
+#pragma warning restore CS8600 // Converting null literal or possible null value to non-nullable type.
 
                 return documentResponses;
 

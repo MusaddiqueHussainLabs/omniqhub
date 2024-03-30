@@ -6,7 +6,7 @@ namespace omniqhub.client.Pages.Authentication
     public partial class Login
     {
         #region Private Properties
-        [Inject] private NavigationManager NavigationManager { get; set; }
+        [Inject] private NavigationManager? NavigationManager { get; set; }  
         [Inject] public required ApiClient Client { get; set; }
         [Inject] public required ISnackbar Snackbar { get; set; }
         private bool PasswordVisibility { get; set; }
@@ -27,7 +27,7 @@ namespace omniqhub.client.Pages.Authentication
             var response = await Client.Login(LoginCommand);
             if (response != null)
             {
-                NavigationManager.NavigateTo("/personal/dashboard");
+                NavigationManager?.NavigateTo("/personal/dashboard");
             }
             else
             {

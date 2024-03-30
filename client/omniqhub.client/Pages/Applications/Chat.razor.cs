@@ -59,18 +59,13 @@ namespace omniqhub.client.Pages.Applications
                     _userQuestion = "";
                     _currentQuestion = default;
 
-                    JavaScriptModule.ScrollIntoView(AnswerElementId);
-                    StateHasChanged();
+                    //JavaScriptModule.ScrollIntoView(AnswerElementId);
+                    //StateHasChanged();
                 }
-            }
-            catch(Exception ex)
-            {
-                
             }
             finally
             {
                 _isReceivingResponse = false;
-                
             }
         }
 

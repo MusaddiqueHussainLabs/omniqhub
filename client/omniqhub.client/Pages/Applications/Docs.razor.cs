@@ -55,10 +55,12 @@ namespace omniqhub.client.Pages.Applications
                 var documents = await Client.GetDocumentsAsync();
                 _documents.Clear();
 
+#pragma warning disable CS8602 // Dereference of a possibly null reference.
                 foreach (var document in documents)
                 {
                     _documents.Add(document);
                 }
+#pragma warning restore CS8602 // Dereference of a possibly null reference.
             }
             finally
             {
@@ -104,8 +106,10 @@ namespace omniqhub.client.Pages.Applications
             }
         }
 
+#pragma warning disable CS8602 // Dereference of a possibly null reference.
         private ValueTask OnShowDocumentAsync(DocumentResponse document) =>
             PdfViewer.ShowDocumentAsync(document.name, document.url.ToString());
+#pragma warning restore CS8602 // Dereference of a possibly null reference.
 
         public void Dispose() => _cancellationTokenSource.Cancel();
     }

@@ -16,8 +16,8 @@
 
     public class UploadDocumentsResponse
     {
-        public string[] uploaded_files { get; set; }
+        public string[] uploaded_files { get; set; } = new string[0];
         public bool is_successful { get; set; }
-        public string error { get; set; }
+        public string error { get; set; } = string.Empty;
     }
 }

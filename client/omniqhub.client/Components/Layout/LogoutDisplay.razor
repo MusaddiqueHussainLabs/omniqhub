@@ -17,7 +17,7 @@
         try
         {
             Logger.LogInformation("start retrieve logout button visibility.");
-            ShowLogoutButton = await ApiClient.ShowLogoutButtonAsync();
+            // ShowLogoutButton = await ApiClient.ShowLogoutButtonAsync();
         }
         catch (Exception e)
         {
@@ -28,6 +28,6 @@
     private void SignOut()
     {
         Logger.LogInformation("User start logged out.");
-        Nav.NavigateTo(".auth/logout", true);
+        Nav.NavigateTo("/pages/authentication/login", true);
     }
 }
