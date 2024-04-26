@@ -44,7 +44,7 @@ OmniqHub adopts a modular architecture leveraging both frontend and backend comp
 
 ## Demo
 
-[Demo](references/OmniQ_Hub_Demo.mp4)
+[YouTube Demo](https://www.youtube.com/watch?v=J5wvvD9yObI)
 
 ## Azure Account Requirements
 

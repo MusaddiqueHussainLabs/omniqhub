@@ -18,3 +18,5 @@ unstructured[pdf]
 azure-search-documents
 azure-identity
 langchainhub
+azure-functions
+azure-storage-blob
