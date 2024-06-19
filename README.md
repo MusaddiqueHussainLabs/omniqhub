@@ -91,7 +91,6 @@ For additional guidance and resources, refer to the documentation and tutorials 
 - [LangChain](https://python.langchain.com/docs/get_started/introduction)
 - [Google AI Studio](https://aistudio.google.com/app/home)
 - [`Azure.AI.OpenAI` NuGet package](https://www.nuget.org/packages/Azure.AI.OpenAI)
-- [Original Blazor App](https://github.com/Azure-Samples/azure-search-openai-demo-csharp)
 
 ## FAQ
 
